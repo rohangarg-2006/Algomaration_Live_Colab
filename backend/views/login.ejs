@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+           background-image: url('https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=');
+       }
+   </style>
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-sm w-full">
+        <form id="loginForm" class="space-y-6">
+            <h2 class="text-3xl font-semibold text-center">Login</h2>
+
+            <div>
+                <label for="loginEmail" class="block text-base">Email</label>
+                <input type="email" id="loginEmail" name="loginEmail" required
+                    class="w-full p-3 mt-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="loginPassword" class="block text-base">Password</label>
+                <input type="password" id="loginPassword" name="loginPassword" required
+                    class="w-full p-3 mt-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter your password">
+            </div>
+
+            <button type="submit"
+                class="w-full py-3 mt-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg">
+                Login
+            </button>
+        </form>
+
+        <p class="mt-4 text-center text-base">Don't have an account? <a href="/signup"
+                class="text-blue-400 hover:text-blue-500">Signup here</a></p>
+    </div>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const email = form.loginEmail.value;
+            const password = form.loginPassword.value;
+
+            try {
+                const res = await fetch('/login', {
+                    method: 'POST',
+                    body: JSON.stringify({ email, password }),
+                    headers: { 'Content-Type': 'application/json' }
+                });
+
+                const data = await res.json();
+
+                if (data.user) {
+                    location.assign('/');
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
