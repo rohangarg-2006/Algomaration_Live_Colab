@@ -6,7 +6,7 @@ It is a team based project that was developed during Agglomeration- The annual H
 The problem statement can be accessed from below-><br>
 https://docs.google.com/document/d/13Hhw3rzftF60-dRHbPDjeSjZLgiCmrMaHU6yFPfsvoY/edit?tab=t.0<br>
 The certificate for winning the 1st position can be accessed from below-><br>
-`https://drive.google.com/file/d/14sPr60pIjkwWRxoC7h4kVqVy2rYb31b7/view`<br>
+https://drive.google.com/file/d/14sPr60pIjkwWRxoC7h4kVqVy2rYb31b7/view<br>
 ## Features
 - **Real-time Data Updates**: Visualizations that automatically refresh as new data becomes available.
 - **Token-based Authentication**: Secure access to data visualizations using token authentication mechanisms.
