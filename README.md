@@ -4,7 +4,7 @@
 Algomaration_Live_Colab is a data visualization project that emphasizes real-time updates and secure token-based authentication. It aims to provide dynamic and interactive visual representations of data, ensuring that users receive the most current information securely.
 It is a team based project that was developed during Agglomeration- The annual Hackathon of the CSE department of IIT(ISM) Dhanbad. This project led us to achieve 1st rank in the problem statement among 20+ teams which got this problem statement in the Hackathon.<br>
 The problem statement can be accessed from below-><br>
-`https://docs.google.com/document/d/13Hhw3rzftF60-dRHbPDjeSjZLgiCmrMaHU6yFPfsvoY/edit?tab=t.0`<br>
+https://docs.google.com/document/d/13Hhw3rzftF60-dRHbPDjeSjZLgiCmrMaHU6yFPfsvoY/edit?tab=t.0<br>
 The certificate for winning the 1st position can be accessed from below-><br>
 `https://drive.google.com/file/d/14sPr60pIjkwWRxoC7h4kVqVy2rYb31b7/view`<br>
 ## Features
